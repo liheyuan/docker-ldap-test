@@ -11,47 +11,49 @@ version: 1
 #objectClass: organizationalRole
 #objectClass: simpleSecurityObject
 #cn: admin
-#userPassword:: e1NTSEF9enlrNlVWWTkrdnZtQ1lLcGZpV2h1SWpVc3RJY3pBMXg=
+#userPassword:: e1NTSEF9R0k3eXhoNGkvWnZqc1AyV2VuVFM0MXlzdlVUN2J1c2I=
 #description: LDAP administrator
 
 dn: ou=users,dc=coder4,dc=com
-objectClass: top
 objectClass: organizationalUnit
+objectClass: top
 ou: users
 
 dn: ou=groups,dc=coder4,dc=com
-objectClass: top
 objectClass: organizationalUnit
+objectClass: top
 ou: groups
 
 dn: cn=lihy,ou=users,dc=coder4,dc=com
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
 objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
 cn: lihy
 sn:: 5p2O6LWr5YWD
+mail: lihy@coder4.com
 userPassword:: cGFzcw==
 
 dn: cn=liuxr,ou=users,dc=coder4,dc=com
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
 objectClass: inetOrgPerson
+objectClass: organizationalPerson
+objectClass: person
+objectClass: top
 cn: liuxr
 sn:: 5YiY5paw6JWK
+mail: liuxr@coder4.com
 userPassword:: cGFzcw==
 
 dn: cn=Users,ou=groups,dc=coder4,dc=com
-objectClass: top
 objectClass: groupOfUniqueNames
+objectClass: top
 cn: Users
 uniqueMember: cn=lihy,ou=users,dc=coder4,dc=com
 uniqueMember: cn=liuxr,ou=users,dc=coder4,dc=com
 
 dn: cn=Admin,ou=groups,dc=coder4,dc=com
-objectClass: top
 objectClass: groupOfUniqueNames
+objectClass: top
 cn: Admin
 uniqueMember: cn=lihy,ou=users,dc=coder4,dc=com
 
